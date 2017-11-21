@@ -11,6 +11,8 @@
 a{
     text-decoration: none;
     color: white;
+    
+
 }
 .textcenter{
     text-align: center;
@@ -36,6 +38,7 @@ nav{
 .menu{
     color: white;
     padding: 10px 5px;
+    font-family: 'Poppins', sans-serif;
 }
 .menu:hover{
     border-bottom: 5px solid #7C8928;
@@ -54,8 +57,6 @@ nav{
 #home{
     background-image: url("../image/Homepage.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;  
 }
 
 
