@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+    font: 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.textcenter{
+    text-align: center;
+    color: white;
+}
+
+/***********************************
+
+            HEADER
+
+***********************************/
+
+header{
+    background-color: gray;
+/*    opacity: 0.5;*/
+/*    position: fixed;*/
+    
+}
+nav{
+    float: right;
+    margin-top: 40px;
+}
+.menu{
+    color: white;
+    padding: 10px 5px;
+}
+.menu:hover{
+    border-bottom: 5px solid #7C8928;
+    margin-top: 5px;
+}
+.logo{
+    display: inline;
+}
+
+/***********************************
+
+             MAIN
+
+***********************************/
+
+#home{
+    background-image: url("../image/Homepage.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;  
+}
+
+
+
+
+
+
+
+/***********************************
+
+            FOOTER
+
+***********************************/
+footer{
+    background-color: dimgrey;
+}
+
