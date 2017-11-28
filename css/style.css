@@ -1,22 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
-.wrap{
+
+.wrap {
     width: 80%;
+    max-width: 1000px;
     margin: 0 auto;
-    font: 
-}
-a{
-    text-decoration: none;
-    color: white;
     
 
 }
-.textcenter{
+
+a {
+    text-decoration: none;
+
+}
+
+.textcenter {
     text-align: center;
     color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
 }
 
 /***********************************
@@ -25,28 +39,51 @@ a{
 
 ***********************************/
 
-header{
-    background-color: gray;
-/*    opacity: 0.5;*/
+header {
 /*    position: fixed;*/
-    
+    border-bottom: 3px solid #7C8928;
+
 }
-nav{
-    float: right;
-    margin-top: 40px;
-}
-.menu{
-    color: white;
-    padding: 10px 5px;
+
+li a {
+    color: black;
     font-family: 'Poppins', sans-serif;
+    padding: 5px 5px;
 }
-.menu:hover{
+
+header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.navigation ul li {
+    display: inline;
+}
+
+.navigation ul {
+/*    margin: 20px 0px 20px 0px;*/
+}
+
+li a:hover {
     border-bottom: 5px solid #7C8928;
     margin-top: 5px;
 }
-.logo{
-    display: inline;
+
+.logo img {
+/*    position: absolute;*/
+/*
+    top: 0;
+    left: 50%;
+    transform: translate(-50%)
+*/
+    margin-top: 5px;
 }
+
+
+
 
 /***********************************
 
@@ -54,23 +91,78 @@ nav{
 
 ***********************************/
 
-#home{
-    background-image: url("../image/Homepage.jpg");
-    background-repeat: no-repeat;
+#home {
+    /*    background-image: url(../image/Homepage.jpg);*/
+    /*    padding: 10em 0;*/
+    /*    position: relative;*/
 }
 
+/*homepage title*/
 
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
 
+/*homepage button*/
 
+div .myButton {
+    background-color: transparent;
+    -moz-border-radius: 38px;
+    -webkit-border-radius: 38px;
+    border-radius: 38px;
+    border: 4px solid #4b8f29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 22px 49px;
+    text-decoration: none;
+    margin-top: 40px;
+}
 
+.myButton:hover {
+    background-color:#4b8f29 ;
+}
 
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/*    O-nama*/
+
+#o-nama .wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap .txt,.photo{
+    flex-basis: 50%;
+}
+
+#o-nama h2,p{
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px
+}
+#o-nama p{
+    color: darkslategray;
+}
 
 /***********************************
 
             FOOTER
 
 ***********************************/
-footer{
+
+footer {
     background-color: dimgrey;
 }
 
