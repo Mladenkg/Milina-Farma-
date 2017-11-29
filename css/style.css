@@ -9,7 +9,7 @@
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
-    
+
 
 }
 
@@ -40,8 +40,12 @@ img {
 ***********************************/
 
 header {
-/*    position: fixed;*/
+        position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     border-bottom: 3px solid #7C8928;
+    background-color: rgba(255,255,255,0.5);
 
 }
 
@@ -49,7 +53,10 @@ li a {
     color: black;
     font-family: 'Poppins', sans-serif;
     padding: 5px 5px;
+    transition-duration: 0.1s;
 }
+
+/*MENU*/
 
 header .wrap {
     display: flex;
@@ -61,10 +68,7 @@ header .wrap {
 
 .navigation ul li {
     display: inline;
-}
 
-.navigation ul {
-/*    margin: 20px 0px 20px 0px;*/
 }
 
 li a:hover {
@@ -73,12 +77,12 @@ li a:hover {
 }
 
 .logo img {
-/*    position: absolute;*/
-/*
+        position: relative;
+    
     top: 0;
     left: 50%;
-    transform: translate(-50%)
-*/
+    
+
     margin-top: 5px;
 }
 
@@ -90,12 +94,6 @@ li a:hover {
              MAIN
 
 ***********************************/
-
-#home {
-    /*    background-image: url(../image/Homepage.jpg);*/
-    /*    padding: 10em 0;*/
-    /*    position: relative;*/
-}
 
 /*homepage title*/
 
@@ -125,10 +123,12 @@ div .myButton {
     padding: 22px 49px;
     text-decoration: none;
     margin-top: 40px;
+    transition-duration: 0.5s;
 }
 
 .myButton:hover {
-    background-color:#4b8f29 ;
+    background-color: #4b8f29;
+
 }
 
 .myButton:active {
@@ -138,21 +138,24 @@ div .myButton {
 
 /*    O-nama*/
 
-#o-nama .wrap{
+#o-nama .wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.wrap .txt,.photo{
+.wrap .txt,
+.photo {
     flex-basis: 50%;
 }
 
-#o-nama h2,p{
+#o-nama h2,
+p {
     text-align: left;
     font-family: 'Open Sans', sans-serif;
     padding: 10px
 }
-#o-nama p{
+
+#o-nama p {
     color: darkslategray;
 }
 
@@ -165,4 +168,3 @@ div .myButton {
 footer {
     background-color: dimgrey;
 }
-
