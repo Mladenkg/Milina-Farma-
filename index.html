@@ -7,7 +7,7 @@
     <!--    Meta tag-->
 
     <meta charset="UTF-8">
-    <meta name="description" content="Milina Farma Kragujevac">
+    <meta name="description" content="Biografija Mladena Zlatanovica">
     <meta name="keywords" content="cv, biografija,html,css,front end developer, resume">
     <meta name="author" content="Mladen Zlatanovic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,20 +34,27 @@
         <div class="wrap">
 
             <!--            Social media buttons-->
-            
             <div class="socialmedia">
-                <a href="https://www.facebook.com/milinafarma/" target="_blank">
-                <img src="image/facebook.png" width="30px"  alt="facebook icon">
-            </a>
-                <a href="https://www.linkedin.com/company/milina-farma/" target="_blank">
-                <img  src="image/linkedin.png" width="30px"  alt="Linkedin icon">
-            </a>
-                <a href="#" target="_blank">
-                <img src="image/insta.png" width="30px"  alt="instagram icon">
-            </a>
-                <a href="#" target="_blank">
-                <img src="image/google.png" width="30px"  alt="google+ icon">
-            </a>
+                <a class="face" href="https://www.facebook.com/milinafarma/" target="_blank">
+                    <!--                <img src="image/facebook.png" width="30px" height="auto" alt="facebook icon">-->
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a class="linkedin" href="https://www.linkedin.com/company/milina-farma/" target="_blank">
+                    <!--                <img  src="image/linkedin.png" width="30px" height="auto" alt="Linkedin icon">-->
+
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+
+
+                </a>
+                <a class="insta" href="#" target="_blank">
+                    <!--                <img src="image/insta.png" width="30px" height="auto" alt="instagram icon">-->
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a class="google" href="#" target="_blank">
+                    <!--                <img src="image/google.png" width="30px" height="auto" alt="google+ icon">-->
+                    <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+
+                </a>
 
 
             </div>
@@ -55,7 +62,7 @@
 
             <div class="logo">
                 <a href="#home">
-                <img src="image/logo.png" width="80px"  alt="Milina farma logo" ></a>
+                <img src="image/logo.png" width="80px" height="auto" alt="Milina farma logo" ></a>
             </div>
 
             <!--            NAVIGATION-->
@@ -118,10 +125,10 @@
                 <h1>proizvodi</h1>
 
                 <div class="sirevi">
-                    <img src="image/prevreli_sir.jpg" alt="sir">
+                    <img src="image/prevreli_sir.png"  alt="sir">
 
                     <!--                <div class="zimnica">-->
-                    <img src="image/ajvar_tacna.jpg" alt="ajvar">
+                    <img src="image/ajvar_tacna.png" width="450px" alt="ajvar">
 
                     <!--                </div>-->
                 </div>
@@ -137,8 +144,27 @@
             </div>
         </section>
         <section id="kontakt">
+            <h1>Kontakt</h1>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3409.4617042182895!2d20.921553223300823!3d44.06262344750529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe228a5effc583546!2sMilina+Farma!5e0!3m2!1ssr!2srs!4v1512323753825" width="100%" height="450em" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="wrap">
-
+                
+                            
+                
+                <div class="contact">
+                    <i class="fa fa-map-marker" aria-hidden="true">Ul. Vikendaska 11,34000 Kragujevac</i>
+                    <p>office@milinafarma.rs</p>
+                    <p>+381 60 347 51 99</p>
+                </div>
+                
+<!--                        CONTACT FORMA-->
+                
+                <form>
+                    <input class="input1" type="text" name="Ime" placeholder="Ime" required><br>
+                    <input class="input1" type="email" name="mail" placeholder="Unesite mail" required><br>
+                    <input class="input1" type="text" name="naslov" placeholder="Naslov"><br>
+                    <input class="input2" type="text" name="masage" placeholder="Tekst poruke">
+                </form>
 
 
             </div>
