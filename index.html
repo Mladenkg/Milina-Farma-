@@ -91,16 +91,18 @@
         <section id="home">
 
 
-            <img src="image/Homepage.jpg" alt="homepage photo">
+            <img class="hphoto" src="image/Homepage.jpg" alt="homepage photo">
 
             <div class="title">
 
 
-                <h1>Dobrodosli na Milinu Farmu</h1>
+                <h1 class="animacija">Dobrodosli na Milinu Farmu</h1>
 
                 <!--                Button on homepage-->
 
-                <a href="#o-nama" class="myButton">DETALJNIJE</a>
+
+
+                <a href="#proizvodi" class="myButton">DETALJNIJE</a>
 
             </div>
 
@@ -125,7 +127,7 @@
                 <h1>proizvodi</h1>
 
                 <div class="sirevi">
-                    <img src="image/prevreli_sir.png"  alt="sir">
+                    <img src="image/prevreli_sir.png" alt="sir">
 
                     <!--                <div class="zimnica">-->
                     <img src="image/ajvar_tacna.png" width="450px" alt="ajvar">
@@ -145,27 +147,34 @@
         </section>
         <section id="kontakt">
             <h1>Kontakt</h1>
-            
+
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3409.4617042182895!2d20.921553223300823!3d44.06262344750529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe228a5effc583546!2sMilina+Farma!5e0!3m2!1ssr!2srs!4v1512323753825" width="100%" height="450em" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="wrap">
-                
-                            
-                
+
+
+
                 <div class="contact">
-                    <i class="fa fa-map-marker" aria-hidden="true">Ul. Vikendaska 11,34000 Kragujevac</i>
+                    <p>Ul. Vikendaska 11,34000 Kragujevac</p>
                     <p>office@milinafarma.rs</p>
                     <p>+381 60 347 51 99</p>
                 </div>
-                
-<!--                        CONTACT FORMA-->
-                
+
+                <!--                        CONTACT FORMA-->
+
+<!--
                 <form>
                     <input class="input1" type="text" name="Ime" placeholder="Ime" required><br>
                     <input class="input1" type="email" name="mail" placeholder="Unesite mail" required><br>
                     <input class="input1" type="text" name="naslov" placeholder="Naslov"><br>
                     <input class="input2" type="text" name="masage" placeholder="Tekst poruke">
                 </form>
-
+-->
+                <form>
+                    <input name="name" type="text" class="feedback-input" placeholder="Ime" />
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Tekst"></textarea>
+                    <input type="submit" value="POSALJI" />
+                </form>
 
             </div>
         </section>
