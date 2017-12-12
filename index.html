@@ -22,7 +22,23 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
 
-    <!--    Style-->
+    <!--    js  -->
+    <!--
+<link rel="stylesheet" href="/css/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/jquery.bxslider.js"></script>
+-->
+    <!--bx slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--slick slider-->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+
 
 </head>
 
@@ -93,22 +109,33 @@
         <section id="home">
 
 
-            <img class="hphoto" src="image/Homepage.jpg" alt="homepage photo">
-
-            <div class="title">
-
-
-                <h1 class="animacija">Dobrodosli na Milinu Farmu</h1>
+            <!--                        HOMEPAGE SLIDER-->
 
 
 
-                <!--                Button on homepage-->
 
 
 
-                <a href="#proizvodi" class="myButton">DETALJNIJE</a>
+            <ul class="bxslider">
+                <li><img class="hphoto" src="image/Homepage.jpg" alt="homepage photo">
+                    <div class="title">
+                        <h1 class="animacija">Dobrodosli na Milinu Farmu</h1>
+                        <a href="#proizvodi" class="button">DETALJNIJE</a>
+                    </div>
+                </li>
+                <li><img class="hphoto" src="image/paprika_u_pavlaci_slider.jpg" alt="slider photo"></li>
+                <li><img class="hphoto" src="image/sir_slider.jpg" alt="slider photo"></li>
+                <li><img class="hphoto" src="image/Ajvar_slider.jpg" alt="slider photo"></li>
+                <li><img class="hphoto" src="image/kremsir_slider.jpg" alt="slider photo"></li>
+            </ul>
+            <script>
+                $(document).ready(function() {
+                    $('.bxslider').bxSlider();
+                });
 
-            </div>
+            </script>
+
+
 
 
         </section>
@@ -137,25 +164,53 @@
                 <h1>proizvodi</h1>
 
                 <div class="proizvodi">
-                    <img src="image/proizvodi/Nalepnice_za_%D0%90%D0%88%D0%92%D0%90%D0%A0_%D0%A1%D0%90_%D0%9F%D0%90%D0%A2%D0%9B%D0%98%D0%8F%D0%90%D0%9D%D0%9E%D0%9C.jpg" alt="ajvar">
-                    <img src="image/proizvodi/Nalepnice%20za%20%D0%90%D0%88%D0%92%D0%90%D0%A0.jpg" alt="ajvar">
-                    <img src="image/proizvodi/Nalepnice%20za%20%D0%9C%D0%9B%D0%95%D0%92%D0%95%D0%9D%D0%98%20%D0%9F%D0%90%D0%A0%D0%90%D0%94%D0%90%D0%88%D0%97.jpg" alt="ajvar">
-                    <img src="image/proizvodi/Nalepnice%20za%20%D0%BF%D0%B0%D0%BF%D1%80%D0%B8%D0%BA%D1%83%20%D1%81%D0%B0%20%D0%BA%D1%83%D0%BF%D1%83%D1%81%D0%BE%D0%BC.jpg" alt="ajvar">
-                    <img src="image/proizvodi/Nalepnice%20za%20%D0%9F%D0%90%D0%A1%D0%A2%D0%95%D0%A0.%20%D0%9F%D0%90%D0%9F%D0%A0%D0%98%D0%9A%D0%90.jpg" alt="ajvar">
-                    <img src="image/proizvodi/Nalepnice%20za%20%D1%82%D1%83%D1%80%D1%88%D0%B8%D1%98%D1%83.jpg" alt="ajvar">
-                    <img src="image/proizvodi/Nalepnice%20za%20%D0%A8%D0%90%D0%A0%D0%95%D0%9D%D0%90%20%D0%A1%D0%90%D0%9B%D0%90%D0%A2%D0%90.jpg" alt="ajvar">
-
-                    <img src="image/proizvodi/%D0%BA%D0%BE%D0%B7%D1%98%D0%B8%20%D1%81%D0%B8%D1%80%20%D1%83%20%D0%BC%D0%B0%D1%81%D0%BB%D0%B8%D0%BD%D0%BE%D0%B2%D0%BE%D0%BC%20%D1%83%D1%99%D1%83.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D0%BC%D0%B0%D1%80%D0%B5%D0%BB%D0%B0%D0%B4%D0%B0%20%D0%BE%D0%B4%20%D1%88%D0%B8%D0%BF%D1%83%D1%80%D0%BA%D0%B0.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D0%BF%D0%B0%D0%BF%D1%80%D0%B8%D0%BA%D0%B0%20%D1%81%D0%B0%20%D0%BA%D0%BE%D0%B7%D1%98%D0%B8%D0%BC%20%D1%81%D0%B8%D1%80%D0%BE%D0%BC%20%D1%83%20%D1%83%D1%99%D1%83.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D1%81%D0%B8%D1%80%D1%83%D0%BF%20%D0%BE%D0%B4%20%D0%B2%D0%B8%D1%88%D1%9A%D0%B5.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D1%81%D0%B8%D1%80%D1%83%D0%BF%20%D0%BE%D0%B4%20%D0%B4%D1%80%D0%B5%D0%BD%D0%B0.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D1%81%D0%B8%D1%80%D1%83%D0%BF%20%D0%BE%D0%B4%20%D0%B7%D0%BE%D0%B2%D0%B5.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D1%81%D0%B8%D1%80%D1%83%D0%BF%20%D0%BE%D0%B4%20%D0%BC%D0%B0%D0%BB%D0%B8%D0%BD%D0%B5.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D1%9F%D0%B5%D0%BC%20%D0%BE%D0%B4%20%D0%BA%D0%B0%D1%98%D1%81%D0%B8%D1%98%D0%B5.jpg" alt="ajvar">
-                    <img src="image/proizvodi/%D1%9F%D0%B5%D0%BC%20%D0%BE%D0%B4%20%D0%A8%D0%89%D0%98%D0%92%D0%95%20%D0%98%20%D0%91%D0%A0%D0%95%D0%A1%D0%9A%D0%92%D0%95.jpg" alt="ajvar">
+                    <div class="zimnica">
+                        <div><img src="image/proizvodi/ajvar.jpg" alt="ajvar"></div>
+                        <div><img src="image/proizvodi/ajvar_sa_patlidzanom.jpg" alt="ajvar"></div>
+                        <div><img src="image/proizvodi/paprika_sa_kupusom.jpg" alt="ajvar"></div>
+                        <div><img src="image/proizvodi/mleveni_paradajz.jpg" alt="ajvar"></div>
+                        <div><img src="image/proizvodi/pasterizovana_paprika.jpg" alt="ajvar"></div>
+                        <div><img src="image/proizvodi/sarena_salata.jpg" alt="ajvar"></div>
+                        <div><img src="image/proizvodi/tursija.jpg" alt="ajvar"></div>
+                    </div>
+                    <img src="image/proizvodi/paprika_sa_sirom.jpg" alt="ajvar">
+                    <img src="image/proizvodi/kozji_sir_u_maslinovom.jpg" alt="ajvar">
+                    <img src="image/proizvodi/dzem_od_breskve_i_kajsije.jpg" alt="ajvar">
+                    <img src="image/proizvodi/dzem_od_kajsije.jpg" alt="ajvar">
+                    <img src="image/proizvodi/marmelada_sipurak.jpg" alt="ajvar">
+                    <img src="image/proizvodi/pekmez_od_sljiva.jpg" alt="ajvar">
+                    <img src="image/proizvodi/sirup_od_drena.jpg" alt="ajvar">
+                    <img src="image/proizvodi/sirup_od_maline.jpg" alt="ajvar">
+                    <img src="image/proizvodi/sirup_od_visnje.jpg" alt="ajvar">
+                    <img src="image/proizvodi/sirup_od_zove.jpg" alt="ajvar">
                 </div>
+                <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+                <script type="text/javascript" src="js/slick.js"></script>
 
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('.zimnica').slick({
+                            setting - name: setting - value
+                        });
+                        $('.slider-for').slick({
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                            fade: true,
+                            asNavFor: '.slider-nav'
+                        });
+                        $('.slider-nav').slick({
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            asNavFor: '.slider-for',
+                            dots: true,
+                            centerMode: true,
+                            focusOnSelect: true
+                        });
+                    });
+
+                </script>
 
             </div>
         </section>
@@ -225,6 +280,7 @@
                     }
                     // Get the element with id="defaultOpen" and click on it
                     document.getElementById("defaultOpen").click();
+
                 </script>
 
 

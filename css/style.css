@@ -83,6 +83,7 @@ li a {
     padding: 10px;
     transition-duration: 0.2s;
     font-size: 15px;
+    font-weight: 400;
 }
 
 .navigation ul li {
@@ -92,7 +93,7 @@ li a {
 
 li a:hover {
     padding: 10px 10px;
-    background-color: #7C8928;
+    color: #7C8928;
     border-radius: 10px;
 }
 
@@ -146,6 +147,11 @@ li a:hover {
 
 ***********************************/
 
+/*HOMEPAGE SLIDER*/
+
+
+
+
 /*homepage title*/
 
 .title {
@@ -155,10 +161,11 @@ li a:hover {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 30px;
-    animation: title 5s 1;
+    animation: title 3s 1;
 
 
 }
+
 
 @keyframes title {
     0% {
@@ -181,7 +188,7 @@ h1 {
 
 /*homepage button*/
 
-div .myButton {
+.button {
     background-color: transparent;
     -moz-border-radius: 38px;
     -webkit-border-radius: 38px;
@@ -196,21 +203,22 @@ div .myButton {
     padding: 22px 49px;
     text-decoration: none;
     margin-top: 40px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
-.myButton:hover {
-    background-color: #7C8928;
+.button:hover {
+    color: #7C8928;
 
 }
 
-.myButton:active {
+.button:active {
     position: relative;
     top: 1px;
 }
 
 /*    ANIMACIJA*/
 
+/*
 .hphoto {
     animation: photo 3s 1;
     animation-timing-function: ease-in;
@@ -225,6 +233,7 @@ div .myButton {
     }
 }
 
+*/
 
 
 
