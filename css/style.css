@@ -25,7 +25,6 @@ h4,
 h5,
 h6 {
     font-family: 'Poppins', sans-serif;
-    /*    margin:2em;*/
 }
 
 .textcenter {
@@ -43,6 +42,16 @@ img {
 
 }
 
+h1 {
+    color: white;
+    background-color: #7C8928;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+section{
+    padding: 90px 0 30px 0;
+}
 /***********************************
 
             HEADER
@@ -60,18 +69,12 @@ header {
 }
 
 header .wrap {
-    /*
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-*/
     display: grid;
     grid-template-columns: 1fr 90px 1fr;
     align-items: center;
     justify-content: space-between;
-
 }
+
 
 
 
@@ -148,9 +151,9 @@ li a:hover {
 ***********************************/
 
 /*HOMEPAGE SLIDER*/
-
-
-
+#home{
+    padding-top: 0;
+}
 
 /*homepage title*/
 
@@ -162,7 +165,10 @@ li a:hover {
     color: white;
     font-size: 30px;
     animation: title 3s 1;
+}
 
+.animacija {
+    background-color: transparent;
 
 }
 
@@ -182,9 +188,7 @@ li a:hover {
     }
 }
 
-h1 {
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 /*homepage button*/
 
@@ -235,14 +239,9 @@ h1 {
 
 */
 
-
-
 /*    Sekcija  #O-nama   */
 
-#o-nama {
 
-    padding-top: 100px;
-}
 
 #o-nama .wrap {
     display: flex;
@@ -272,31 +271,143 @@ p {
 
 ***********************************/
 
-#proizvodi {
-    background-color: whitesmoke;
+
+/*Galerija*/
+
+.grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: row dense;
 }
 
-#proizvodi h1 {
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    padding: 50px;
-    /*    font-family: 'Open Sans', sans-serif;*/
-}
-
-.sirevi {
+.item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #0c9a9a;
+    color: #fff;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    color: #fff;
+    background: url("../image/Paprika_sa_sirom.jpg");
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+    box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    cursor: pointer;
+    counter-increment: item-counter;
 }
 
-.sirevi {
-    box-shadow: 10px;
+.item1{
+    background-image: url("../image/proizvodi/Paprika_sa_sirom.jpg");
+}
+.item2{
+    background-image: url("../image/proizvodi/krem%20sir.jpg");
+}
+.item3{
+    background-image: url("../image/proizvodi/sir-u-maslinovom-ulju.jpg");
+}
+.item4{
+    background-image: url("../image/proizvodi/paprika%20u%20pavlaci.jpg");
+    background-position: center;
+}
+.item5{
+    background-image: url("../image/proizvodi/ajvar.jpg");
+}
+.item6{
+    background-image: url("../image/proizvodi/sarena-salata.jpg");
+}
+.item7{
+    background-image: url("../image/proizvodi/Milina%20farma%20title2.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+
+}
+.item8{
+    background-image: url("../image/proizvodi/sir.jpg");
+    background-position: top;
+}
+.item9{
+    background-image: url("../image/proizvodi/ukiseljeno-grozdje.jpg");
 }
 
-.sirevi img:hover {
-    opacity: 0.5;
+
+.item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
+
+.item:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.item:hover:after {
+    opacity: 0;
+}
+
+.item--medium {
+    grid-row-end: span 2;
+}
+
+.item--large {
+    grid-row-end: span 3;
+}
+
+.item--full {
+    grid-column-end: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .item--full {
+        grid-column: 1/-1;
+        grid-row-end: span 2;
+    }
+}
+
+.item__details {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    color: #444;
+    background: #fff;
+    text-transform:full-width;
+    letter-spacing: 1px;
+    color: #828282;
+}
+
+.item__details:before {
+    content: counter(item-counter);
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-right: 0.5em;
+    color: #444;
+}
+
 
 /***********************************
 
@@ -390,11 +501,6 @@ form input {
 
 }
 
-#kontakt h1 {
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    padding: 50px;
-}
 
 /***************contact forma**************/
 
@@ -484,10 +590,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-    .hphoto{
+    .hphoto {
         display: none;
     }
-    header{
+    header {
         position: relative;
     }
 }

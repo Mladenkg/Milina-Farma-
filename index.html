@@ -14,6 +14,7 @@
 
     <!--    Link-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="image/favicon.png" rel="icon">
     <link href="image/apple-tuch-icon.png" rel="apple-touch-icon">
@@ -23,21 +24,24 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;subset=latin-ext" rel="stylesheet">
 
     <!--    js  -->
-    <!--
-<link rel="stylesheet" href="/css/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/js/jquery.bxslider.js"></script>
--->
-    <!--bx slider-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <!--slick slider-->
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
 
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $('.bxslider').bxSlider();
+        });
+        $(document).ready(function() {
+            $('.zimnica').bxSlider();
+        });
+
+    </script>
 
 
 </head>
@@ -111,16 +115,11 @@
 
             <!--                        HOMEPAGE SLIDER-->
 
-
-
-
-
-
             <ul class="bxslider">
                 <li><img class="hphoto" src="image/Homepage.jpg" alt="homepage photo">
                     <div class="title">
                         <h1 class="animacija">Dobrodosli na Milinu Farmu</h1>
-                        <a href="#proizvodi" class="button">DETALJNIJE</a>
+                        <!--                        <a href="#proizvodi" class="button">DETALJNIJE</a>-->
                     </div>
                 </li>
                 <li><img class="hphoto" src="image/paprika_u_pavlaci_slider.jpg" alt="slider photo"></li>
@@ -128,12 +127,6 @@
                 <li><img class="hphoto" src="image/Ajvar_slider.jpg" alt="slider photo"></li>
                 <li><img class="hphoto" src="image/kremsir_slider.jpg" alt="slider photo"></li>
             </ul>
-            <script>
-                $(document).ready(function() {
-                    $('.bxslider').bxSlider();
-                });
-
-            </script>
 
 
 
@@ -160,58 +153,101 @@
 
 
         <section id="proizvodi">
+            <h1>proizvodi</h1>
             <div class="wrap">
-                <h1>proizvodi</h1>
 
-                <div class="proizvodi">
-                    <div class="zimnica">
-                        <div><img src="image/proizvodi/ajvar.jpg" alt="ajvar"></div>
-                        <div><img src="image/proizvodi/ajvar_sa_patlidzanom.jpg" alt="ajvar"></div>
-                        <div><img src="image/proizvodi/paprika_sa_kupusom.jpg" alt="ajvar"></div>
-                        <div><img src="image/proizvodi/mleveni_paradajz.jpg" alt="ajvar"></div>
-                        <div><img src="image/proizvodi/pasterizovana_paprika.jpg" alt="ajvar"></div>
-                        <div><img src="image/proizvodi/sarena_salata.jpg" alt="ajvar"></div>
-                        <div><img src="image/proizvodi/tursija.jpg" alt="ajvar"></div>
+                <div class="grid">
+                    <!--
+                    <div class="item">
+                        <div class="item__details">
+                            
+                        </div>
                     </div>
-                    <img src="image/proizvodi/paprika_sa_sirom.jpg" alt="ajvar">
-                    <img src="image/proizvodi/kozji_sir_u_maslinovom.jpg" alt="ajvar">
-                    <img src="image/proizvodi/dzem_od_breskve_i_kajsije.jpg" alt="ajvar">
-                    <img src="image/proizvodi/dzem_od_kajsije.jpg" alt="ajvar">
-                    <img src="image/proizvodi/marmelada_sipurak.jpg" alt="ajvar">
-                    <img src="image/proizvodi/pekmez_od_sljiva.jpg" alt="ajvar">
-                    <img src="image/proizvodi/sirup_od_drena.jpg" alt="ajvar">
-                    <img src="image/proizvodi/sirup_od_maline.jpg" alt="ajvar">
-                    <img src="image/proizvodi/sirup_od_visnje.jpg" alt="ajvar">
-                    <img src="image/proizvodi/sirup_od_zove.jpg" alt="ajvar">
+-->
+                    <div class="item item--large item1">
+                        <div class="item__details">
+                            Paprika punjena sirom
+                        </div>
+                    </div>
+                    <div class="item item--medium item2">
+                        <div class="item__details">
+                            krem sir
+                        </div>
+                    </div>
+                    <div class="item item--large item3 ">
+                        <div class="item__details">
+                            Sir u maslinovim ulju
+                        </div>
+                    </div>
+                    <div class="item item7">
+                        <div class="item__details">
+                            Dobrodosli na milinu farmu
+                        </div>
+                    </div>
+                    <div class="item item--full item4">
+                        <div class="item__details">
+                            paprika u pavlaci
+                        </div>
+                    </div>
+                    <div class="item item--large item5">
+                        <div class="item__details">
+                            Ajvar
+                        </div>
+                    </div>
+                    <div class="item item--large item6">
+                        <div class="item__details">
+                            Sarena salata
+                        </div>
+                    </div>
+                    <div class="item item--large item9">
+                        <div class="item__details">
+                            Ukiseljeno grozdje
+                        </div>
+                    </div>
+                    <div class="item item--full item8">
+                        <div class="item__details">
+                            Kozji sir
+                        </div>
+                    </div>
+                    <!--
+                    <div class="item item--large">
+                        <div class="item__details">
+                            toffee bear claw
+                        </div>
+                    </div>
+-->
+                    <!--
+                    <div class="item">
+                        <div class="item__details">
+                            cake cookie croissant
+                        </div>
+                    </div>
+-->
+                    <!--
+                    <div class="item item--medium">
+                        <div class="item__details">
+                            liquorice sweet roll
+                        </div>
+                    </div>
+                    <div class="item item--medium">
+                        <div class="item__details">
+                            chocolate marzipan
+                        </div>
+                    </div>
+                    <div class="item item--large">
+                        <div class="item__details">
+                            danish dessert lollipop
+                        </div>
+                    </div>
+-->
+                    <!--
+                    <div class="item">
+                        <div class="item__details">
+                            sugar plum dragée
+                        </div>
+                    </div>
+-->
                 </div>
-                <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-                <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-                <script type="text/javascript" src="js/slick.js"></script>
-
-                <script type="text/javascript">
-                    $(document).ready(function() {
-                        $('.zimnica').slick({
-                            setting - name: setting - value
-                        });
-                        $('.slider-for').slick({
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            arrows: false,
-                            fade: true,
-                            asNavFor: '.slider-nav'
-                        });
-                        $('.slider-nav').slick({
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            asNavFor: '.slider-for',
-                            dots: true,
-                            centerMode: true,
-                            focusOnSelect: true
-                        });
-                    });
-
-                </script>
-
             </div>
         </section>
 
@@ -222,23 +258,24 @@
 
 
         <section id="kuhinjica">
+            <h1>kuhinjica</h1>
             <div class="wrap">
 
 
                 <!--                    KUHINJICA TAB-->
 
-                <button class="tablink" onclick="openPage('Home', this, 'red')">Kiflice sa sirom</button>
+                <button class="tablink" onclick="openPage('Home', this, 'red')">Pogacice sa sirom</button>
                 <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Salata sa ajvarom</button>
-                <button class="tablink" onclick="openPage('Contact', this, 'blue')">Medeno srce</button>
+                <button class="tablink" onclick="openPage('Contact', this, 'blue')">Salcici</button>
 
 
                 <div id="Home" class="tabcontent">
-                    <h3>Kiflice sa sirom</h3>
+                    <h3>Pogacice sa sirom</h3>
                     <div class="kuh_content">
                         <div>
                             <p>Lorem Ipsum је једноставно модел текста који се користи у штампарској и словослагачкој индустрији. Lorem ipsum је био стандард за модел текста још од 1500. године, када је непознати штампар узео кутију са словима и сложио их како би направио узорак књиге. Не само што је овај модел опстао пет векова, него је чак почео да се користи и у електронским медијима, непроменивши се. Популаризован је шездесетих година двадесетог века заједно са листовима летерсета који су садржали Lorem Ipsum пасусе, а данас са софтверским пакетом за прелом као што је Aldus PageMaker који је садржао Lorem Ipsum верзије.</p>
                         </div>
-                        <div><img src="image/default-placeholder.png" width="400px" alt="placeholder"></div>
+                        <div><img src="image/polaroid%203.jpg" width="400px" alt="placeholder"></div>
                     </div>
                 </div>
 
@@ -253,7 +290,7 @@
                 </div>
 
                 <div id="Contact" class="tabcontent">
-                    <h3>Medeno srce</h3>
+                    <h3>Salcici</h3>
                     <div class="kuh_content">
                         <div>
                             <p>Lorem Ipsum је једноставно модел текста који се користи у штампарској и словослагачкој индустрији. Lorem ipsum је био стандард за модел текста још од 1500. године, када је непознати штампар узео кутију са словима и сложио их како би направио узорак књиге. Не само што је овај модел опстао пет векова, него је чак почео да се користи и у електронским медијима, непроменивши се. Популаризован је шездесетих година двадесетог века заједно са листовима летерсета који су садржали Lorem Ipsum пасусе, а данас са софтверским пакетом за прелом као што је Aldus PageMaker који је садржао Lorem Ipsum верзије.</p>
@@ -263,25 +300,9 @@
                 </div>
 
 
-                <script>
-                    function openPage(pageName, elmnt, color) {
-                        var i, tabcontent, tablinks;
-                        tabcontent = document.getElementsByClassName("tabcontent");
-                        for (i = 0; i < tabcontent.length; i++) {
-                            tabcontent[i].style.display = "none";
-                        }
-                        tablinks = document.getElementsByClassName("tablink");
-                        for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].style.backgroundColor = "";
-                        }
-                        document.getElementById(pageName).style.display = "block";
-                        //                        elmnt.style.backgroundColor = color;
-
-                    }
-                    // Get the element with id="defaultOpen" and click on it
-                    document.getElementById("defaultOpen").click();
-
-                </script>
+                <!--
+              
+-->
 
 
 
@@ -293,7 +314,9 @@
         <section id="kontakt">
             <h1>Kontakt</h1>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3409.4617042182895!2d20.921553223300823!3d44.06262344750529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe228a5effc583546!2sMilina+Farma!5e0!3m2!1ssr!2srs!4v1512323753825" width="100%" height="450em" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div id="map" style="width: 100%; height: 30em; background-color: aqua;"></div>
+
+            <!--            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3409.4617042182895!2d20.921553223300823!3d44.06262344750529!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe228a5effc583546!2sMilina+Farma!5e0!3m2!1ssr!2srs!4v1512323753825" width="100%" height="450em" frameborder="0" style="border:0" allowfullscreen></iframe>-->
             <div class="wrap">
 
 
@@ -326,6 +349,51 @@
 
         </div>
     </footer>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            //                        elmnt.style.backgroundColor = color;
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var myCenter = new google.maps.LatLng(44.0625478, 20.9201043);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 15
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                icon: "favicon.png"
+            });
+            marker.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content: "Dobrodosli na Milinu Farmu"
+            });
+            infowindow.open(map, marker);
+        }
+
+    </script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO0c5ngyFs6YganshhIFLOWTUjeTyCsdo&callback=myMap"></script>
+
+
 </body>
 
 </html>
