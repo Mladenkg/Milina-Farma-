@@ -8,8 +8,8 @@
 									}
 									objOpenInnovationConfig =
 									{
-										objFields: {  name: true, description: true, email: true, firstname: true, lastname: true, gender: true, challengeID: true },
-										objMandatory: {  name: true, description: true, email: true, firstname: false, lastname: false, gender: true, challengeID: false },
+										objFields: {  name: true, description: true, email: true, challengeID: true },
+										objMandatory: {  name: false, description: true, email: true, challengeID: false },
 										strUrl: 'https://eu1crowd.datastation.com/challengeideaadd',
 										strCaptchaRefreshUrl: 'https://eu1crowd.datastation.com/securimage/securimage_show.php',
 										strClientName: 'https://indemo.datastation.com'
@@ -18,23 +18,9 @@
 								</script>
 <div id="sl-OI-formcontent" class="st-oi-form-container">
 <input id="sl-OI-challengeID" type="hidden" name="challengeID" value="191"/>
-<div class="st-oi-form-component-container"><div class="st-oi-header-desc" style="text-align:center;">test<br /></div></div><div class="st-oi-crbt"></div>
-<div class="st-oi-form-component-container"><div class="st-oi-reward">tes<br /></div></div><div class="st-oi-crbt"></div>
-<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Idea Title</p></label><div><input id="sl-OI-name" class="st-oi-form-inputfield" title="Idea Title" name="name"/><br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p">Idea Title</p></label><div><input id="sl-OI-name" class="st-oi-form-inputfield" title="Idea Title" name="name"/><br /></div></div><div class="st-oi-crbt"></div>
 <div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Idea Description</p></label><div><textarea id="sl-OI-description" class="st-oi-form-inputfield maxlength_1000" title="Idea Description" name="description"></textarea><br /></div></div><div class="st-oi-crbt"></div>
 <div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Email</p></label><div><input id="sl-OI-email" class="st-oi-form-inputfield" title="Email" name="email"/><br /></div></div><div class="st-oi-crbt"></div>
-<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p">First name</p></label><div><input id="sl-OI-firstname" class="st-oi-form-inputfield" title="First name" name="first_name"/><br /></div></div><div class="st-oi-crbt"></div>
-<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p">Last name</p></label><div><input id="sl-OI-lastname" class="st-oi-form-inputfield" title="Last name" name="last_name"/><br /></div></div><div class="st-oi-crbt"></div>
-<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Gender</p></label>
-				<div>
-					<select id="sl-OI-gender" class="st-oi-mt4" name="gender">
-						<option value="">---</option>
-						<option value="male">Male</option>
-						<option value="female">Female</option>
-					</select>
-				</div>
-				<br />
-				</div><div class="st-oi-crbt"></div>
 <div id="sl-OI-captchaconatiner" class="st-oi-form-component-container">
 									<label class="st-oi-form-label"><p class="st-oi-form-label-p">&nbsp;</p></label>
 									<div class="st-oi-form-captcha-container">
