@@ -1,0 +1,53 @@
+<div class="st-oi-crbt"></div>
+<div id="sl-openinnovation-box" class="st-oi-body">
+<link rel="stylesheet" href="https://eu1crowd.datastation.com/public/css/open-inno.css">
+<script type="text/javascript">
+									if ((typeof jQuery).toLowerCase() == 'undefined')
+									{
+										document.write('<script src="https://eu1crowd.datastation.com/public/javascript/jquery.min.js" type="text/javascript"><\/script>');
+									}
+									objOpenInnovationConfig =
+									{
+										objFields: {  name: true, description: true, email: true, firstname: true, lastname: true, gender: true },
+										objMandatory: {  name: true, description: true, email: true, firstname: true, lastname: true, gender: true },
+										strUrl: 'https://eu1crowd.datastation.com/add',
+										strCaptchaRefreshUrl: 'https://eu1crowd.datastation.com/securimage/securimage_show.php',
+										strClientName: 'https://indemo.datastation.com'
+									}
+									document.write('<script src="https://eu1crowd.datastation.com/public/javascript/openinnovation.js" type="text/javascript"><\/script>');
+								</script>
+<div id="sl-OI-formcontent" class="st-oi-form-container">
+<div class="st-oi-form-component-container"><div class="st-oi-header-desc">New hero line for our website<br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Enter Idea Title</p></label><div><input id="sl-OI-name" class="st-oi-form-inputfield" title="Idea Title" name="name"/><br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Idea description</p></label><div><textarea id="sl-OI-description" class="st-oi-form-inputfield" title="Description" name="description"></textarea><br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Idea Email</p></label><div><input id="sl-OI-email" class="st-oi-form-inputfield" title="Email" name="email"/><br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Full name</p></label><div><input id="sl-OI-firstname" class="st-oi-form-inputfield" title="First name" name="first_name"/><br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Enter Last name</p></label><div><input id="sl-OI-lastname" class="st-oi-form-inputfield" title="Last name" name="last_name"/><br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span>Gender</p></label>
+				<div>
+					<select id="sl-OI-gender" class="st-oi-mt4" name="gender">
+						<option value="">---</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+				<br />
+				</div><div class="st-oi-crbt"></div>
+<div id="sl-OI-captchaconatiner" class="st-oi-form-component-container">
+									<label class="st-oi-form-label"><p class="st-oi-form-label-p">&nbsp;</p></label>
+									<div class="st-oi-form-captcha-container">
+										<span class="st-oi-form-captcha-exp">Type the characters from the picture below:</span>
+										<img id="sl-OI-captchaimage" class="st-oi-form-captcha-img" src="https://eu1crowd.datastation.com/securimage/securimage_show.php" alt="CAPTCHA Image" />
+										<a id="sl-OI-captcharefresh" class="st-oi-form-captcha-refresh-img" href="#"><img src="https://eu1crowd.datastation.com/public/icons/arrow_circle_double.png" /></a>
+									</div>
+								</div>
+								<div class="st-oi-crbt"></div><br />
+<div class="st-oi-form-component-container"><label class="st-oi-form-label"><p class="st-oi-form-label-p"><span class="st-oi-mandatory-dot">&nbsp;</span></p></label><div><input id="sl-OI-captchacode" class="st-oi-form-inputfield st-oi-form-captcha-input" type="text" name="captcha_code" size="10" maxlength="6" /><br /></div></div><div class="st-oi-crbt"></div>
+<div class="st-oi-form-button-container"><button id="sl-OI-addbutton" class="st-oi-form-button" type="button">Submit</button></div>
+</div>
+<div id="sl-OI-resultmessagecontainer" class="st-oi-dne st-oi-form-container">
+									<p id="sl-OI-successmessage" class="st-oi-dne st-oi-form-result-msg"><img class="st-oi-form-result-icon" src="https://eu1crowd.datastation.com/public/icons/check-color.png" />Idea added</p>
+									<p id="sl-OI-failuremessage" class="st-oi-dne st-oi-form-result-msg"><img class="st-oi-form-result-icon" src="https://eu1crowd.datastation.com/public/icons/cross-color.png" />Idea has not been submited</p>
+									<a id="sl-OI-backlink" class="st-oi-form-button" href="#">Back</a>
+								</div>
+</div>
